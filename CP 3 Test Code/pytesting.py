@@ -8,5 +8,5 @@ L = [1, 2, 3, 4, 5]
 
 expected_result = 3.0
 
-def test_avf():
+def test_avg():
     assert expected_result == avg(L)
