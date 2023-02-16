@@ -13,6 +13,7 @@ def linear_search(L, x):
 
     return i         
 
+
 # for loop
 def linear_search2(L, x):
     n = len(L)
@@ -26,5 +27,4 @@ def linear_search2(L, x):
 
 
 li = [1, 3, 4, 5, 6, 7, 8, 9, 10, 11 ,12, 13, 14, 15, 16, 17, 18, 19, 20]    
-
 print(linear_search2(li, 10))
