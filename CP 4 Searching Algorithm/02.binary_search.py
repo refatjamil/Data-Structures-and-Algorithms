@@ -1,23 +1,22 @@
-def binary_search(L, x):
-    left, right = 0, len(L) - 1
+def binary_search(List, Tergat):
+    left_index_number = 0
+    right_index_number = len(List) -1
 
-    while left <= right:
-        mid = (left + right) // 2 # integer division
+    while left_index_number <= right_index_number:
+        mid_index_number = (right_index_number + right_index_number) // 2
 
-        if L[mid] == x:
-            return mid 
-
-        if L[mid] < x:
-            left = mid + 1
-
+        if List[mid_index_number] == Tergat:
+            return mid_index_number
+        
+        if List[mid_index_number] < Tergat:
+            left_index_number = mid_index_number + 1
         else:
-            right = mid - 1
-
+            right_index_number = mid_index_number -1
     return -1
 
 if __name__ == "__main__":
     L = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    for x in range(1, 11):
+    for x in range(len(L)):
         position = binary_search(L, x)
 
         if position == -1:
