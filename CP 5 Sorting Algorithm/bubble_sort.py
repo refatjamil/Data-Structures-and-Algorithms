@@ -1,11 +1,11 @@
 def bubble_sort(L):
     n = len(L)
-    for i in range(0, n):
+    for i in range(0, n-1):
         sp = False
-        for j in range(0, n-i-1):
+        for j in range(0, n-1-i):
             if L[j] > L[j+1]:
                 L[j+1], L[j] = L[j], L[j+1]
-                sp = 3
+                sp = True
         if sp is False:
             break            
 
